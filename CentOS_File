@@ -1,0 +1,26 @@
+# This is a Dockerfile to create centos base iamge
+
+FROM scratch
+MAINTAINER Ravi Shankar <arsr319@gmail.com>
+LABEL Version="1.0.0" \
+        release-date="2017-10-06" \
+        licence="Apache 2.0" \
+
+        Owner="DevOps Team"
+ADD centos-7-docker.tar.xz /
+COPY index.html /opt
+ADD sample.tar /opt
+
+ADD https://en.wikipedia.org/wiki/Water /opt
+RUN useradd goutham
+
+ENV APACHE_LOG_DIR=/var/log
+ENV DEBUG_LVL 4
+
+USER goutham
+
+WORKDIR /opt
+
+EXPOSE 22
+
+CMD ["/bin/bash"]
