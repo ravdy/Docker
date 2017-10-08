@@ -1,0 +1,21 @@
+version: "3"
+
+services:
+   redis:
+     image: redis:alpine
+     container_name: myredis
+     volumes:
+       - redis_data:/data
+     restart: always
+
+   mobyconuter:
+     depends_on:
+      - redis
+     image: russmckendrick/moby-counter
+     container_name: mymoby
+     ports:
+       - "8080:80"
+     restart: always
+
+volumes:
+    redis_data:
