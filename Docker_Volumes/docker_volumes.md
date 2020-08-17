@@ -41,7 +41,7 @@ Create a named volume then attach volume to a container
 
 Create a named volume with size 
   ```sh
-  docker volume create --opt o=size=100m --opt device=/data3 --opt o=size=100m --opt type=btrfs vtuatdb02_data3 // to create volume with size 
+  docker volume create --opt o=size=100m --opt device=/data3 --opt type=btrfs vtuatdb02_data3 // to create volume with size 
   ```
 
 #### Host Volumes 
