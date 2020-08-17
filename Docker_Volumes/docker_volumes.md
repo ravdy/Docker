@@ -49,7 +49,7 @@ Create a named volume with size
 Create a host volume 
   ```sh 
   mkdir /opt/data02
-  docker run -it --name vtwebuat03 /opt/data02:/data02 nginx /bin/bash
+  docker run -it --name vtwebuat03 -v /opt/data02:/data02 nginx /bin/bash
   ```
 
 ### 🏷️ Metadata
