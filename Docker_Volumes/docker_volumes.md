@@ -18,7 +18,7 @@ Docker has 3 options for containers to store files in the host machine, so that 
 1. host volume or bind volumes
  
 #### Anonymous Volumes
-Create a container with an anonymous volume which is mounted as `/data` on container. in this case we mention container directory name. On host system it maps to a random-hash directory under /var/lib/docker directory. 
+Create a container with an anonymous volume which is mounted as `/data01` on container. in this case we mention container directory name. On host system it maps to a random-hash directory under /var/lib/docker directory. 
   ```sh 
   docker run -it --name vtwebuat01 -v /data01 nginx /bin/bash
   ```
