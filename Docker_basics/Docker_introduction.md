@@ -28,15 +28,18 @@ docker exec -it centos
 Ctrl +pq to comout from container 
 docker stop <container>
 docker start <container>
+ ```
  
 docker images and containers stored under /var/lib/docker 
+
+```sh
 dcoker  run -d -t --name <name> --hostname <container hostname> <image_name> 
 example: docker run -d -t --name nginxserver --hostname nginxpod nginx
- 
 docker rm <contaienr> 
+```
 
-Port forwarding 
-
+### Port forwarding 
+```sh
 docker run -d -t --name nginx -p 8080:80 nginx 
 inside a container of nginx got to /user/share/nginx/html location to update index.html
 docker commit <contaner_ID> Container_name:V1  - to create image out of container 
@@ -44,5 +47,5 @@ docker login <Docker_hub_URL>:<port>
 ```
 
 
-#Docker Image
+#### Docker Images
  Docker Containers are nothing but the runtime instance of Docker Image. 
