@@ -1,5 +1,5 @@
 # Manage data in Docker
-By default all files created inside a container are stored on a writable container layer. This means that:
+By default all files created inside a container are stored on a writable container layer. This means that:  
 The data doesn’t persist when that container no longer exists, and it can be difficult to get the data out of the container if another process needs it.
 
 To list out existing volumes 
