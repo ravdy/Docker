@@ -45,7 +45,7 @@ docker run -d -t --name nginx -p 8080:80 nginx
 inside a container of nginx got to /user/share/nginx/html location to update index.html
 
 ```sh
- docker commit <contaner_ID> Container_name:V1  - to create image out of container 
+ docker commit <contaner_ID> image_name:V1  - to create image out of container 
  docker login <Docker_hub_URL>:<port>
 ```
 

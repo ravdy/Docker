@@ -1,25 +1,28 @@
 # persist application data using docker volumes
 
-Maintaing data is necessary for the stateful applications eventhough container deleted. In this demonastration we are going to see how can we achive this. 
+Managing data is necessary for the stateful applications even though container deleted. In this demonstration we are going to see how can we achieve this. 
+
+
+# Using Named Volumes 
 
 1. Create a jenkins container 
    ```sh 
    docker run --name vtjenkinsprd01 -p 8080:8080 -p 50000:50000 -v vtjenkinsprd01_jenkins_home_vol:/var/jenkins_home jenkins
    ```
-1. Create test job on jenkins console 
+1. Create a test job on jenkins console 
 
-1. check for the job in the info in the volume
+1. check for the job info on the container
    ```sh 
    docker volume ls
    docker inspect <volume_name>
    ```
-1. Delete docker container 
+1. Delete jenkins container 
    ```sh
    docker stop vtjenkinstest01
    docker rm vtjenkinstest01
    ```
 
-1. Create a new container with existing volume name. 
+1. Create a new container with existing volume. 
    ```sh
    docker run -d --name vtjenkinsprd02 -p 8090:8080 -p 55000:50000 -v vtjenkinsprd01_jenkins_home_vol:/var/jenkins_home jenkins
    ```
