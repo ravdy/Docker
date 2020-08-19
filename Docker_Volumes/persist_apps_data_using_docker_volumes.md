@@ -3,7 +3,7 @@
 Managing data is necessary for the stateful applications even though container deleted. In this demonstration we are going to see how can we achieve this. 
 
 
-# Using Named Volumes 
+## Using Named Volumes 
 
 1. Create a jenkins container 
    ```sh 
@@ -27,7 +27,7 @@ Managing data is necessary for the stateful applications even though container d
    docker run -d --name vtjenkinsprd02 -p 8090:8080 -p 55000:50000 -v vtjenkinsprd01_jenkins_home_vol:/var/jenkins_home jenkins
    ```
 
-### Using host volumes
+## Using host volumes
 
 1. Create a directory or filesystem and change permssions to 777
    ```sh

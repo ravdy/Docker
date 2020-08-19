@@ -57,3 +57,11 @@ Steps we are following
 	```
 
 1. Check for the content in the file. We could see same our changes. 
+
+### 💡 Help/Suggestions or 🐛 Bugs
+
+Thank you for your interest in contributing to our project. Whether it's a bug report, new feature, correction, or additional documentation or solutions, we greatly value feedback and contributions from our community.
+
+### 🏷️ Metadata
+
+**Level**: 100
