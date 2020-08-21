@@ -25,10 +25,10 @@ Steps we are following
 
 1. Create a container using nginx image
 	```sh
-	docker run -dt --name vtproxyuat01 -p 8080:80 nginx:loatest 
+	docker run -dt --name vtproxyuat01 -p 8080:80 nginx:latest 
 	docker exec -it vtproxyuat01 /bin/bash
 		or
-	docker run -it --name vtproxyuat01 -p 8080:80 nginx:loatest /bin/bash
+	docker run -it --name vtproxyuat01 -p 8080:80 nginx:latest /bin/bash
 	```
 
 1. Modify index.html file on container 
