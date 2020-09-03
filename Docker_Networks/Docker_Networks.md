@@ -36,7 +36,7 @@ Allows you to assign a MAC address to a container, making it appear as a physica
 
 # Demenastration 
 
-Do demenistrate this concept lets start with birdge network. 
+To demenistrate this concept lets start with birdge network. 
 You can check networks in docker by using 
 ```sh
 
