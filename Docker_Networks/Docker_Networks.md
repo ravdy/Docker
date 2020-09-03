@@ -76,5 +76,6 @@ You can see few networks these are default networks. By default all networks ass
   ping <nginxint02_IP> 
 ```
 
-docker inspect network  <network id>
+docker inspect network  <network id>  
+
 docker run -it --name nginxappuat03 --network 172_network -p 8085:80 --ip 172.28.5.100 nginx
