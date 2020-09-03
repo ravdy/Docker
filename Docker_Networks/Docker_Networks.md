@@ -18,7 +18,7 @@ There are mainly 5 network drivers:
   4. Overlay 
   5.Macvlan
 
- ####Bridge: 
+ #### Bridge: 
  This is a private default internal network created by docker on the host. So, all containers get an internal IP address and these containers can access each other, using this internal IP. The Bridge networks are usually used when your applications run in standalone containers that need to communicate.
 
 #### Host: 
