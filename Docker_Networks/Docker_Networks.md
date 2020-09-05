@@ -8,7 +8,8 @@ Docker networking allows you to attach a container to as many networks as you li
 
 ### Container Network Model(CNM) 
 
-The IPAM plugin APIs are used to create/delete address pools and allocate/deallocate container IP addresses, Network plugin APIs are used to create/delete networks and add/remove containers from networks.
+The IPAM plugin APIs are used to create/delete address pools and allocate/deallocate container IP addresses.   
+Network plugin APIs are used to create/delete networks and add/remove containers from networks.
 
 ### Network drivers
 There are mainly 5 network drivers: 
