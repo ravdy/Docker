@@ -1,0 +1,9 @@
+FROM jenkins:latest
+RUN mkdir /opt/maven
+WORKDIR /opt/maven
+ADD https://mirrors.gigenet.com/apache/maven/maven-3/3.6.3/binaries/apache-maven-3.6.3-bin.tar.gz /opt/maven
+RUN tar -xvzf apache-maven-3.6.3-bin.tar.gz
+RUN mv apache-maven-3.6.3-bin/* .
+ENV M2_HOME=/opt/maven
+ENV M2=/opt/maven/bin
+ENV PATH=$PATH:$M2_HOME:$M2
