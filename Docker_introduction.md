@@ -48,8 +48,6 @@ inside a container of nginx got to /user/share/nginx/html location to update ind
  docker commit <contaner_ID> image_name:V1  - to create image out of container 
  docker login <Docker_hub_URL>:<port>
 ```
-
-
 #Docker Image
  Docker Containers are nothing but the runtime instance of Docker Image.
 `
