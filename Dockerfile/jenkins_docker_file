@@ -7,7 +7,7 @@ RUN yum install jenkins -y
 #USR root
 #RUN apt install java
 RUN mkdir /opt/maven
-WORKDIR /opt/maven
+#WORKDIR /opt/maven
 ADD https://mirrors.gigenet.com/apache/maven/maven-3/3.6.3/binaries/apache-maven-3.6.3-bin.tar.gz /opt/maven
 RUN tar -xvzf apache-maven-3.6.3-bin.tar.gz
 RUN mv apache-maven-3.6.3/* .
