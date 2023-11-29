@@ -1,3 +1,4 @@
+# Sample dockerfile
 FROM centos
 RUN yum install java -y
 RUN mkdir /opt/tomcat/
