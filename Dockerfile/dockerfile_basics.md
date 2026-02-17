@@ -1,11 +1,11 @@
 # Dockerfile basics
 
 FROM 
-RUN - (Use RUN command only once, becuase each run command create a new lower)
+RUN  (Use RUN command only once, becuase each run command create a new lower)
 COPY 
-ADD - (To download content inside the container) - Recheck this 
+ADD  (To download content inside the container) - Recheck this 
 EXPOSE 
-CMD  - There can only be one CMD instruction in a Dockerfile. If you list more than one CMD then only the last CMD will take effect.
+CMD   There can only be one CMD instruction in a Dockerfile. If you list more than one CMD then only the last CMD will take effect.
 ENTRYPONT
 
 Create a 1st Docker file to setup tomcat. 
