@@ -146,6 +146,7 @@ networks:
 
 ------------------------------
 
+
 docker stack deploy -c docker-compose.yml pythonapp
 
 docker stack rm demo3
